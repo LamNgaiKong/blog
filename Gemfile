@@ -2,27 +2,16 @@ source "http://gems.ruby-china.com/"
 
 gem "jekyll", "~> 4.4.1"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem "github-pages", group: :jekyll_plugins
-gem "minimal-mistakes-jekyll", "~> 4.27.0"
-# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
-# uncomment the line below. To upgrade, run `bundle update github-pages`.
-# gem "github-pages", group: :jekyll_plugins
-# If you have any plugins, put them here!
-#group :jekyll_plugins do
-#  gem "jekyll-feed", "~> 0.12"
-#end
+# 强制使用 GitHub Pages 官方依赖（自动匹配兼容版本）
+gem "github-pages", group: :jekyll_plugins, require: false
+# 本地开发需要的主题依赖（远程主题不影响本地构建）
+gem "minimal-mistakes-jekyll"
 
-# Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
-# and associated library.
-#platforms :mingw, :x64_mingw, :mswin, :jruby do
-#  gem "tzinfo", ">= 1", "< 3"
-#  gem "tzinfo-data"
-#end
+# 必要插件（保持与主题兼容）
+gem "jekyll-feed"
 
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
-# Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the #gem
-# do not have a Java counterpart.
 #gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 gem "kramdown-parser-gfm" # 添加GitHub Flavored Markdown支持
