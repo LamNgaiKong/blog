@@ -107,9 +107,10 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
-  jekyll (~> 4.4.1)
+  jekyll
+  jekyll-feed
   kramdown-parser-gfm
-  minimal-mistakes-jekyll
+  minimal-mistakes-jekyll (~> 4.27.0)
   wdm (~> 0.1)
 
 BUNDLED WITH

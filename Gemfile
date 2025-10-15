@@ -1,9 +1,9 @@
 source "http://gems.ruby-china.com/"
 
-gem "jekyll", "~> 4.4.1"
+gem "jekyll"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 # 强制使用 GitHub Pages 官方依赖（自动匹配兼容版本）
-gem "github-pages", group: :jekyll_plugins, require: false
+#gem "github-pages", group: :jekyll_plugins, require: false
 # 本地开发需要的主题依赖（远程主题不影响本地构建）
 gem "minimal-mistakes-jekyll", "~> 4.27.0"
 
