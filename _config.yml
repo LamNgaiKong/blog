@@ -21,8 +21,8 @@
 title: 欢迎访问林毅罡的博客
 email: lamngaikong@outlook.com
 description: 这里是我的博客，我会定期分享技术动态、研发心得和行业洞见。
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "https://github.com/LamNgaiKong/blog.git" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: lamngaikong
 github_username:  lamngaikong
 
