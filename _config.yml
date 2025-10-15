@@ -1,0 +1,67 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: 欢迎访问林毅罡的博客
+email: lamngaikong@outlook.com
+description: 这里是我的博客，我会定期分享技术动态、研发心得和行业洞见。
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: lamngaikong
+github_username:  lamngaikong
+
+# Build settings
+theme: minimal-mistakes-jekyll
+
+markdown: kramdown
+kramdown:
+  input: GFM # GitHub Flavored Markdown
+  syntax_highlighter: rouge
+
+# 编码设置
+encoding: utf-8
+
+plugins:
+  - jekyll-feed
+
+# 编码设置
+encoding: utf-8
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+  # 以下是被排除的文件/目录
+  # - .sass-cache/        # Sass 编译缓存目录（默认排除，这里注释了表示不排除）
+  # - .jekyll-cache/      # Jekyll 缓存目录（默认排除，这里注释了表示不排除）
+  # - gemfiles/           #  gem 相关配置目录（注释了表示不排除）
+  # - Gemfile             # Ruby 依赖配置文件（注释了表示不排除）
+  # - Gemfile.lock         # 依赖版本锁定文件（会被排除，不参与构建）
+  # - node_modules/        # Node.js 依赖目录（会被排除）
+  # - vendor/bundle/      # Ruby 依赖安装目录（注释了表示不排除）
+  # - vendor/cache/       # 依赖缓存（注释了表示不排除）
+  # - vendor/gems/        # 本地 gem 包（注释了表示不排除）
+  # - vendor/ruby/        # Ruby 版本目录（注释了表示不排除）
+  # - README.md            # 项目说明文档（会被排除，不生成网页）
+  # - LICENSE.md           # 许可证文档（会被排除，不生成网页）
