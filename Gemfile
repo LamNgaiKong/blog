@@ -5,7 +5,7 @@ gem "jekyll", "~> 4.4.1"
 # 强制使用 GitHub Pages 官方依赖（自动匹配兼容版本）
 gem "github-pages", group: :jekyll_plugins, require: false
 # 本地开发需要的主题依赖（远程主题不影响本地构建）
-gem "minimal-mistakes-jekyll"
+gem "minimal-mistakes-jekyll", "~> 4.27.0"
 
 # 必要插件（保持与主题兼容）
 gem "jekyll-feed"
