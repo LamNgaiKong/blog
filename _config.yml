@@ -27,7 +27,9 @@ twitter_username: lamngaikong
 github_username:  lamngaikong
 
 # Build settings
-remote_theme: mmistakes/minimal-mistakes
+theme                  : "minimal-mistakes-jekyll"
+remote_theme           : "mmistakes/minimal-mistakes"
+
 
 markdown: kramdown
 kramdown:

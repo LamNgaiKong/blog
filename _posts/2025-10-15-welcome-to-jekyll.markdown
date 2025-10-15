@@ -7,7 +7,7 @@ author: "Lam"
 categories: [技术分享, 前端]
 tags: [JavaScript, React, 教程]
 # excerpt_separator: <!--more--> # 可选，用于定义摘要分隔符
-# image: /assets/images/posts/my-first-post-banner.jpg # 可选，文章特色图片
+
 ---
 文章摘要
 
