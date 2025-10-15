@@ -1,0 +1,19 @@
+name: Deploy with Custom Jekyll Version
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true  # 安装 Gemfile 中指定的依赖（含 Jekyll 4.4.1）
+      - name: Build site
+        run: bundle exec jekyll build  # 用指定版本构建
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
